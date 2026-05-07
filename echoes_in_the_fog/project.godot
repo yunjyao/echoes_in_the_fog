@@ -1,0 +1,26 @@
+; Engine configuration file.
+; Recommended: Godot 4.2+
+
+config_version=5
+
+[application]
+config/name="Echoes in the Fog"
+config/description="A perception-based stealth AI demo where enemies reason from vision, sound, and decaying memory instead of omniscient player tracking."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.2")
+config/icon="res://icon.svg"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[layer_names]
+2d_physics/layer_1="world"
+2d_physics/layer_2="player"
+2d_physics/layer_3="enemy"
+2d_physics/layer_4="sound"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
